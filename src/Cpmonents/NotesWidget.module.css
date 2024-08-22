@@ -1,0 +1,42 @@
+.container{
+    width: 100%;
+    height: 100%;
+    background: #F1C75B;
+    display: flex;
+    flex-direction: column;
+    border-radius: 19px;
+}
+.container h2{
+    padding:2rem 0 5px 2rem;
+    color: #000000;
+    height: 20%;
+    width: 100%;
+}
+textarea{
+    background-color: transparent;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 25px;
+    padding-left: 1rem;
+    border-radius: 0 0 19px 19px;
+    width: 100%;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    height: 79%;
+}
+textarea::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  textarea::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);  
+    border-radius: 10px;  
+    margin-left: 10px;    /* color of the tracking area */
+  }
+  
+  textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(28, 21, 21, 0.784);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
