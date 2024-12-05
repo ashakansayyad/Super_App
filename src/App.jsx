@@ -9,7 +9,7 @@ import MoviePage from './pages/MoviePage'
 import { Navigate } from 'react-router-dom'
 import { AppContext } from './context/AppContext'
 import { useContext } from 'react'
-
+import './App.css'
 
 const ProtectedRoute =({children})=>{
   const {user}=useContext(AppContext);

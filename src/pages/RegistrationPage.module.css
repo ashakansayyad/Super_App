@@ -1,9 +1,9 @@
-.container{
+.container {
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: row;
 }
+
 .left{
     width: 40%;
     background-image: url(../assets/bg.png);
@@ -14,11 +14,11 @@
    display: flex;
    justify-content: center;
    align-items: end;
-   padding-bottom: 8rem;
+   padding-bottom: 5rem;
    
 }
 .leftheading{
-    font-size: 50px;
+    font-size: 40px;
 }
 .right{
     width: 60%;
@@ -37,14 +37,14 @@
  margin: 2rem 5rem 0 5rem;
 }
 .heading{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
     font-family: single day;
     color: #72DB73;
     margin-bottom: 1rem;
 }
 .subHeading{
-    font-size: 30px;
+    font-size: 25px;
     font-family: DM sans;
     
 }
@@ -60,9 +60,47 @@
 }
 .footer p{
     padding-left: 1rem;
-    font-size: 20px;
+    font-size: 15px;
     max-width: 50%;
 }
 .footer p span{
     color: #72DB73;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 376px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Stack left and right on mobile */
+    }
+
+    .left {
+       display: none;/* Full height for mobile */
+    }
+
+    .right {
+        width: 100%; /* Full width for mobile */
+        height: 100%; /* Height based on content */
+        justify-content: center;
+        align-items: center;
+    }
+    .header{
+        width: 90%;
+    }
+    .heading {
+        font-size: 32px; /* Adjust font size for mobile */
+    }
+
+    .subHeading {
+        font-size: 22px; /* Adjust font size for mobile */
+    }
+    .footer{
+        width: 90%;
+        /* border: 1px solid white; */
+    }
+    .footer p {
+        font-size: 13px; /* Smaller text for mobile */
+        max-width: 100%; /* Wider text on mobile */
+    }
 }

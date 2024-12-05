@@ -1,4 +1,4 @@
-import React, {useState, useContext } from 'react'
+import React, {useState, useContext,useEffect } from 'react'
 import { AppContext } from '../context/AppContext'
 import styles from './RegistrationPage.module.css'
 import Form from '../Cpmonents/Form';
@@ -26,6 +26,16 @@ const navigate = useNavigate();
     navigate('/Genre')
   }
 
+  useEffect(()=>{
+    if(RegistrationPage ){
+      setName('');
+      setUsername('');
+      setEmail('');
+      setMobile('');
+      setCheckbox('');
+     
+    }
+  },[RegistrationPage]);
 
   return (
     <div

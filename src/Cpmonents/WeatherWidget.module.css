@@ -34,11 +34,17 @@
    
 }
 .firstContainer img{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
+}
+.date,.time{
+    font-size: 18px;
+}
+.wind,.windtext,.humidityThird{
+    font-size: 15px;
 }
 .weatherText{
-    font-size: 1.rem;
+    font-size: 1rem;
 }
 .secondContainer{
     width: 33%;
@@ -52,13 +58,13 @@
 
 }
 .temperature{
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .pressure{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .secondContainer p{
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .thirdContainer{
     width: 33%;
@@ -77,25 +83,25 @@
     align-items: center;
 }
 .thirdContainer img{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 .humidityThird{
     display: flex;
     flex-direction: row;
-    padding: 5px;
+    padding: 4px;
 }
 .windtext{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 @container(min-width:900px){
     .firstContainer img{
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
     }
     .weatherText{
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
     .thirdContainer{
         width: 33%;
@@ -114,13 +120,22 @@
         align-items: center;
     }
     .thirdContainer img{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
     .windtext{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
    .header .date,.time{
-        font-size:45px;
+        font-size:30px;
+    }
+    .temperature{
+        font-size: 1.5rem;
+    }
+    .pressure{
+        font-size: 1.2rem;
+    }
+    .secondContainer p{
+      font-size: 1.2rem;
     }
 }

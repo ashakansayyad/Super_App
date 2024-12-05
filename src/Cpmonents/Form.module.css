@@ -1,49 +1,105 @@
 .container{
-   height: 50%;
-   width: auto;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
-   /* border: 2px solid white; */
-   margin: 0rem 5rem 0rem 5rem;
-}
-input{
-    width: 45%;
-    height: 12%;
-    font-size: 20px;
-    padding-left: 1rem;
-    border: none;
-    outline: none;
-    border-radius: 3.8px;
-    background: #292929;
-    color: white;
-
-}
-.subBtn{
-    background-color: #72DB73;
-    color: white;
-    width: 45%;
-    height: 10%;
-    font-weight: 500;
-    border: none;
-    font-size: 25px;
-    border-radius: 28px;
-    cursor: pointer;
-}
-.error{
-    color: red;
-    font-size: 15px;
-}
-.boxContainer{
-    width: 50%;
+    height: 50%;
+    width: auto;
     display: flex;
-}
-.checkboxpara{
-    font-size: 20px;
-}
-#checkbox{
-    width: 30px;
-    height: 25px;
-    margin-left: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid white; */
+    margin: 0rem 5rem 0rem 5rem;
+ }
+ input{
+     width: 45%;
+     height: 11%;
+     font-size: 15px;
+     padding-left: 1rem;
+     border: none;
+     outline: none;
+     border-radius: 3.8px;
+     background: #292929;
+     color: white;
+ 
+ }
+ .subBtn{
+     background-color: #72DB73;
+     color: white;
+     width: 45%;
+     height: 10%;
+     font-weight: 500;
+     border: none;
+     font-size: 20px;
+     border-radius: 28px;
+     cursor: pointer;
+ }
+ .error{
+     margin-top: -0.5rem;
+     padding: 0;
+     color: red;
+     font-size: 15px;
+ }
+ .boxContainer{
+     width: 50%;
+     display: flex;
+ }
+ .checkboxpara{
+     margin-left: 0.5rem;
+     font-size: 15px;
+ }
+ #checkbox{
+     width: 20px;
+     height: 20px;
+     margin-left: 2rem;
+ } 
+/* Media Queries for Mobile View */
+@media (max-width: 376px) {
+    .container{
+       width: 87%;
+       
+      
+        /* border: 2px solid white; */
+       
+     }
+    input {
+        width: 100%; /* Adjusted for better visibility */
+        height: 40px; /* Set height for uniformity */
+       
+    }
+    
+    .subBtn {
+        background-color: #72DB73;
+        color: white;
+        width: 80%; /* Adjusted for better visibility */
+        height: 40px; /* Set height for uniformity */
+        font-weight: 500;
+        border: none;
+        font-size: 20px;
+        border-radius: 28px;
+        cursor: pointer;
+    }
+    
+    .error {
+        margin-top: -0.1rem;
+        padding: 0;
+        color: red;
+        font-size: 15px;
+    }
+    
+    .boxContainer {
+        width: 100%; /* Adjusted for better visibility */
+        display: flex;
+     
+        align-items: center; /* Align checkbox and text */
+    }
+    
+    .checkboxpara {
+        margin-left: 0.5rem;
+        font-size: 15px;
+    }
+    
+    #checkbox {
+        width: 20px;
+        height: 20px;
+        margin-left: 0rem;
+    }
+
 }

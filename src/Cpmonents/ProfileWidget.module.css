@@ -37,14 +37,14 @@
     padding-left: 1rem;
 }
 .heading,.mail{
-    font-size: 40px;
+    font-size: 30px;
     font-family:"Roboto Serif", serif;
     font-weight: 500;
 
 }
 .username{
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 500;
 }
 .selectGenre{
     display: flex;
@@ -61,17 +61,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-    height: 35%;
+    height: 55%;
     background: #9F94FF;
     color: white;
     font-weight: 200;
     border-radius: 36px;
-    font-size:20px ;
+    font-size:15px ;
 }
 
 @container(min-width:700px){
     .username{
-        font-size: 60px;
+        font-size: 50px;
         font-weight: 600;
     }
     .info{
@@ -88,5 +88,11 @@
         font-family:"Roboto Serif", serif;
         font-weight: 500;
     
+    }
+    .genre{
+        width: 30%;
+     
+        border-radius: 36px;
+        font-size:25px ;
     }
 }

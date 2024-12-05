@@ -14,7 +14,7 @@ console.log(selectedGenre);
     <div className={styles.container} >
       <div className={styles.header}  >
         <h2 className={styles.heading} >Super App</h2>
-        <img src={smallAvatar} alt="" />
+        <img src={smallAvatar} alt="avt" />
       </div>
       <div className={styles.main}>
         <h2>Entertainment according to your choice</h2>
@@ -22,7 +22,7 @@ console.log(selectedGenre);
       <div className={styles.footer}  >
         {selectedGenre?.slice(0,4).map((genre)=>(
         <div key={genre.id} className={styles.genre} >
-            <h1  className={styles.genreName} >{genre}</h1>
+            <h2  className={styles.genreName} >{genre}</h2>
             <GenreRow genre={genre}  />
            
             </div>

@@ -1,59 +1,110 @@
-.container{
-    width: 100vw;
-    height: 100%;
+/* Container for the entire page */
+.container {
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: beige;
+    padding: 0;
+    margin: 0;
 }
-.header{
-    width:100%;
-    height:7rem;
-   background-color: black;
+
+/* Header section */
+.header {
+    width: 100%; /* Changed from 100vw to 100% */
+    height: 10vh;
+    background-color: black;
     display: flex;
     align-items: center;
-    flex-direction: row;
-    /* border: 1px solid white; */
     justify-content: space-between;
-
-   
+    padding: 0 1rem;
+    border-bottom: 2px solid white;
 }
-.header h2{
-    margin-left: 2rem;
+
+.header h2 {
     color: #72DB73;
-    font-family: single day;
-    font-size: 50px;
+    font-family: 'Single Day', sans-serif;
+    font-size: 40px;
     font-weight: 500;
 }
-.header img{
+
+.header img {
     width: 60px;
     height: 60px;
-    margin-right: 2rem;
 }
-.main{
+
+/* Main section */
+.main {
     width: 100%;
-    height: 3rem;
+    height: 10vh;
     background-color: black;
     display: flex;
     align-items: center;
-    padding-left: 3rem;
+    padding-left: 1rem;
 }
-.main h2{
+
+.main h2 {
     color: #FFFFFF;
-    font-family: 'Roboto';
-    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
     letter-spacing: 1px;
 }
-.footer{
-    /* border: 1px solid white; */
-    width: 100%;
-    height: 83%;
+
+/* Footer section for displaying genres and movie rows */
+.footer {
+    width: 100%; /* Changed from 100vw to 100% */
     background-color: black;
+    padding: 1rem;
 }
-.genre{
-    width: 100%;
-    height: 30%;
-    
+
+/* Genre container */
+.genre {
+    background-color: #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
 }
-.genreName{
-    padding: 1rem 0 0 1rem;
+
+/* Genre name */
+.genreName {
+    color: #FFFFFF;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.genre:hover {
+    background-color: #444;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 376px) {
+    .header h2 {
+        font-size: 30px;
+    }
+
+    .header img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .main h2 {
+        font-size: 20px;
+    }
+
+    .genre {
+        padding: 0.5rem;
+    }
+
+    .genreName {
+   
+        font-size: 18px;
+    }
+}
+
+/* Reset body margin and prevent overflow */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }

@@ -7,7 +7,7 @@
     border-radius: 19px;
 }
 .left{
-    width: 26%;
+    width: 25%;
     height: 95%;
     display: flex;
     justify-content: center;
@@ -61,12 +61,14 @@
     font-size: 35px;
 }
 button{
-    margin: 1rem;
-    height: 15%;
+   
+    /* margin-left: 2rem; */
+    height:30px;
+    width: 100%;
     border-radius: 20px;
     background: #FF6A6A;
     color: #FFFFFF;
-    font-size: 25px;
+    font-size: 22px;
     border: none;
 
 }
