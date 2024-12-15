@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from  './MoviePageCss.module.css'
+import styles from  './MoviePage.module.css'
 import smallAvatar from '../assets/smallAvatar.png'
 import { useContext } from 'react';
 import {AppContext} from '../context/AppContext'
